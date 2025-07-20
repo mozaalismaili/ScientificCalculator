@@ -68,6 +68,10 @@ public class ScientificCalculator {
                     case 17:
                         performMax(inputScanner);
                         break;
+
+                    default:
+                        System.out.println("Invalid choice.");
+
                 }
             }
             catch (InputMismatchException e) {
