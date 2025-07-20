@@ -377,5 +377,4 @@ public class ScientificCalculator {
             System.out.println("Try again");
         }
     }
-// ... and so on for all required functions
 }
