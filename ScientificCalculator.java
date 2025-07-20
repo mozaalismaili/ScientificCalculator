@@ -1,0 +1,43 @@
+import java.util.Scanner;
+import java.util.InputMismatchException; // Needed for handling non-numeric input
+public class ScientificCalculator {
+    // You might declare constants here, like PI or E
+    public static void main(String[] args) {
+// Create Scanner object
+// Loop for continuous calculator operation (while loop)
+// Display menu (call displayMenu() method)
+// Get user choice
+// Use switch-case statement to call appropriate method based on choice
+// Handle invalid choices
+// Handle exit condition
+// Close scanner
+    }
+    // --- Menu Display Method ---
+    public static void displayMenu() {
+// Print all calculator options
+    }
+    // --- Basic Arithmetic Methods ---
+    public static double add(double num1, double num2) {
+// Logic for addition
+        return 0; // Placeholder
+    }
+    // public static double subtract(...) { ... }
+// public static double multiply(...) { ... }
+// public static double divide(...) { ... }
+// --- Scientific Math Methods ---
+// public static double calculateSquareRoot(...) { ... }
+// public static double calculatePower(...) { ... }
+// public static double calculateSine(...) { ... }
+// ... and so on for all required functions
+// --- Helper Methods for User Interaction (calling from main's switch-case) ---
+// These methods will get input from the user specifically for each operation
+    private static void performAddition(Scanner scanner) {
+// Prompt for first number
+// Prompt for second number
+// Call add() method
+// Print result
+// Implement try-catch for InputMismatchException here!
+    }
+// private static void performSubtraction(Scanner scanner) { ... }
+// ... and so on for all required functions
+}
