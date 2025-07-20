@@ -104,20 +104,16 @@ public class ScientificCalculator {
     }
     // --- Basic Arithmetic Methods ---
     public static double add(double num1, double num2) {
-        double addResult = num1 + num2;
-        return addResult; // Placeholder
+        return num1 + num2;
     }
     public static double subtract(double num1, double num2) {
-        double subResult = num1 + num2;
-        return subResult;
+        return num1 - num2;
     }
     public static double multiply(double num1, double num2) {
-        double multiResult = num1 * num2;
-        return multiResult;
+        return num1 * num2;
     }
     public static double divide(double num1, double num2) {
-        double divideResult = num1 / num2;
-        return divideResult;
+        return num1 / num2;
     }
 // --- Scientific Math Methods ---
     public static double calculateSquareRoot(double num) {
@@ -166,13 +162,15 @@ public class ScientificCalculator {
     private static void performAddition(Scanner scanner) {
         try {
             // Prompt for first number
+            System.out.print("Enter first number: ");
             double num1 = scanner.nextDouble();
 // Prompt for second number
+            System.out.print("Enter second number: ");
             double num2 = scanner.nextDouble();
 // Call add() method
             double result =add(num1, num2);
 // Print result
-            System.out.println(result);
+            System.out.println("Result is"+result);
         }catch (InputMismatchException e) {
             System.out.println("Try again");
         }// Implement try-catch for InputMismatchException here!
@@ -180,13 +178,15 @@ public class ScientificCalculator {
     private static void performSubtraction(Scanner scanner) {
         try {
             // Prompt for first number
+            System.out.print("Enter first number: ");
             double num1 = scanner.nextDouble();
 // Prompt for second number
+            System.out.print("Enter second number: ");
             double num2 = scanner.nextDouble();
 // Call add() method
             double result =subtract(num1, num2);
 // Print result
-            System.out.println(result);
+            System.out.println("Result is"+result);
         }catch (InputMismatchException e) {
             System.out.println("Try again");
         }
@@ -194,13 +194,15 @@ public class ScientificCalculator {
     private static void performMultiplication(Scanner scanner) {
         try {
             // Prompt for first number
+            System.out.print("Enter first number: ");
             double num1 = scanner.nextDouble();
 // Prompt for second number
+            System.out.print("Enter second number: ");
             double num2 = scanner.nextDouble();
 // Call add() method
             double result =multiply(num1, num2);
 // Print result
-            System.out.println(result);
+            System.out.println("Result is"+result);
         }catch (InputMismatchException e) {
             System.out.println("Try again");
         }
@@ -208,13 +210,15 @@ public class ScientificCalculator {
     private static void performDivision(Scanner scanner) {
         try {
             // Prompt for first number
+            System.out.print("Enter first number: ");
             double num1 = scanner.nextDouble();
 // Prompt for second number
+            System.out.print("Enter second number: ");
             double num2 = scanner.nextDouble();
 // Call add() method
             double result =divide(num1, num2);
 // Print result
-            System.out.println(result);
+            System.out.println("Result is"+result);
         }catch (InputMismatchException e) {
             System.out.println("Try again");
         }catch (ArithmeticException e) {
@@ -222,28 +226,32 @@ public class ScientificCalculator {
     }}
     private static void performSquareRoot(Scanner scanner) {
         try {
+            System.out.print("Enter the number: ");
             double num1 = scanner.nextDouble();
             double result = Math.sqrt(num1);
-            System.out.println(result);
+            System.out.println("Result is "+result);
         }catch (InputMismatchException e) {
             System.out.println("Try again");
         }
     }
     private static void performPower(Scanner scanner) {
         try {
+            System.out.print("Enter the number: ");
             double num1 = scanner.nextDouble();
+            System.out.print("Enter the power: ");
             double num2 = scanner.nextDouble();
             double result= calculatePower(num1, num2);
-            System.out.println(result);
+            System.out.println("Result is "+result);
         }catch (InputMismatchException e) {
             System.out.println("Try again");
         }
     }
     private static void performSine(Scanner scanner) {
         try {
+            System.out.print("Enter  number: ");
             double num1 = scanner.nextDouble();
             double result = calculateSine(num1);
-            System.out.println(result);
+            System.out.println("Result is "+result);
         }
         catch (InputMismatchException e) {
             System.out.println("Try again");
@@ -251,9 +259,10 @@ public class ScientificCalculator {
     }
     private static void performCosine(Scanner scanner) {
         try {
+            System.out.print("Enter  number: ");
             double num1 = scanner.nextDouble();
             double result = calculateCosine(num1);
-            System.out.println(result);
+            System.out.println("Result is "+result);
         }
         catch (InputMismatchException e) {
             System.out.println("Try again");
@@ -261,9 +270,10 @@ public class ScientificCalculator {
     }
     private static void performTangent(Scanner scanner) {
         try {
+            System.out.print("Enter  number: ");
             double num1 = scanner.nextDouble();
             double result = calculateTangent(num1);
-            System.out.println(result);
+            System.out.println("Result is "+result);
         }
         catch (InputMismatchException e) {
             System.out.println("Try again");
@@ -271,9 +281,10 @@ public class ScientificCalculator {
     }
     private static void performNaturalLogarithm(Scanner scanner) {
         try {
+            System.out.print("Enter  number: ");
             double num1 = scanner.nextDouble();
             double result = calculateNaturalLogarithm(num1);
-            System.out.println(result);
+            System.out.println("Result is "+result);
 
         }
         catch (InputMismatchException e) {
@@ -282,9 +293,10 @@ public class ScientificCalculator {
     }
     private static void performBase10Logarithm(Scanner scanner) {
         try {
+            System.out.print("Enter  number: ");
             double num1 = scanner.nextDouble();
             double result = calculateBase10Logarithm(num1);
-            System.out.println(result);
+            System.out.println("Result is "+result);
         }
         catch (InputMismatchException e) {
             System.out.println("Try again");
@@ -292,9 +304,10 @@ public class ScientificCalculator {
     }
     private static void performAbsoluteValue(Scanner scanner) {
         try {
+            System.out.print("Enter  number: ");
             double num1 = scanner.nextDouble();
             double result = calculateAbsoluteValue(num1);
-            System.out.println(result);
+            System.out.println("Result is "+result);
         }
         catch (InputMismatchException e) {
             System.out.println("Try again");
@@ -302,9 +315,10 @@ public class ScientificCalculator {
     }
     private static void performRound(Scanner scanner) {
         try {
+            System.out.print("Enter  number: ");
             double num1 = scanner.nextDouble();
             double result = calculateRound(num1);
-            System.out.println(result);
+            System.out.println("Result is "+result);
         }
         catch (InputMismatchException e) {
             System.out.println("Try again");
@@ -312,9 +326,10 @@ public class ScientificCalculator {
     }
     private static void performCeil(Scanner scanner) {
         try {
+            System.out.print("Enter  number: ");
             double num1 = scanner.nextDouble();
             double result = calculateCeil(num1);
-            System.out.println(result);
+            System.out.println("Result is "+result);
         }
         catch (InputMismatchException e) {
             System.out.println("Try again");
@@ -322,9 +337,10 @@ public class ScientificCalculator {
     }
     private static void performFloor(Scanner scanner) {
         try {
+            System.out.print("Enter  number: ");
             double num1 = scanner.nextDouble();
             double result = calculateFloor(num1);
-            System.out.println(result);
+            System.out.println("Result is "+result);
 
         }
         catch (InputMismatchException e) {
@@ -333,10 +349,12 @@ public class ScientificCalculator {
     }
     private static void performMix(Scanner scanner) {
         try {
+            System.out.print("Enter first number: ");
             double num1 = scanner.nextDouble();
+            System.out.print("Enter second number: ");
             double num2 = scanner.nextDouble();
             double result= findMin(num1, num2);
-            System.out.println(result);
+            System.out.println("Min is "+result);
         }
         catch (InputMismatchException e) {
             System.out.println("Try again");
@@ -344,10 +362,12 @@ public class ScientificCalculator {
     }
     private static void performMax(Scanner scanner) {
         try {
+            System.out.print("Enter first number: ");
             double num1 = scanner.nextDouble();
+            System.out.print("Enter second number: ");
             double num2 = scanner.nextDouble();
             double result= findMax(num1, num2);
-            System.out.println(result);
+            System.out.println("Max is "+result);
         }
         catch (InputMismatchException e) {
             System.out.println("Try again");
