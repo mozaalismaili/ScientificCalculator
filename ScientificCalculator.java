@@ -134,5 +134,138 @@ public class ScientificCalculator {
         }catch (ArithmeticException e) {
             System.out.println(e.getMessage());
     }}
+    private static void performSquareRoot(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double result = Math.sqrt(num1);
+            System.out.println(result);
+        }catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
+    private static void performPower(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double num2 = scanner.nextDouble();
+            double result= calculatePower(num1, num2);
+            System.out.println(result);
+        }catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
+    private static void performSine(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double result = calculateSine(num1);
+            System.out.println(result);
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
+    private static void performCosine(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double result = calculateCosine(num1);
+            System.out.println(result);
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
+    private static void performTangent(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double result = calculateTangent(num1);
+            System.out.println(result);
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
+    private static void performNaturalLogarithm(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double result = calculateNaturalLogarithm(num1);
+            System.out.println(result);
+
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
+    private static void performBase10Logarithm(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double result = calculateBase10Logarithm(num1);
+            System.out.println(result);
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
+    private static void performAbsoluteValue(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double result = calculateAbsoluteValue(num1);
+            System.out.println(result);
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
+    private static void performRound(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double result = calculateRound(num1);
+            System.out.println(result);
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
+    private static void performCeil(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double result = calculateCeil(num1);
+            System.out.println(result);
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
+    private static void performFloor(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double result = calculateFloor(num1);
+            System.out.println(result);
+
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
+    private static void performMix(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double num2 = scanner.nextDouble();
+            double result= findMin(num1, num2);
+            System.out.println(result);
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
+    private static void performMax(Scanner scanner) {
+        try {
+            double num1 = scanner.nextDouble();
+            double num2 = scanner.nextDouble();
+            double result= findMax(num1, num2);
+            System.out.println(result);
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+    }
 // ... and so on for all required functions
 }
