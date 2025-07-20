@@ -10,7 +10,7 @@ public class ScientificCalculator {
         while (flag) {
             // Display menu (call displayMenu() method)
             displayMenu();
-            System.out.print("Enter your choice (1-8 or 0 to exit): ");
+            System.out.print("Enter your choice (1-17 or 0 to exit): ");
             try {
                 int choice = inputScanner.nextInt();
                 switch (choice) {
@@ -228,7 +228,7 @@ public class ScientificCalculator {
         try {
             System.out.print("Enter the number: ");
             double num1 = scanner.nextDouble();
-            double result = Math.sqrt(num1);
+            double result = calculateSquareRoot(num1);
             System.out.println("Result is "+result);
         }catch (InputMismatchException e) {
             System.out.println("Try again");
