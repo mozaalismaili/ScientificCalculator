@@ -94,7 +94,8 @@ public class ScientificCalculator {
             System.out.println(result);
         }catch (InputMismatchException e) {
             System.out.println("Try again");
-        }
-    }
+        }catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+    }}
 // ... and so on for all required functions
 }
