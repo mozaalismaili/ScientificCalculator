@@ -4,17 +4,103 @@ public class ScientificCalculator {
     // You might declare constants here, like PI or E
     public static void main(String[] args) {
 // Create Scanner object
+        Scanner inputScanner = new Scanner(System.in);
+        boolean flag = true;
 // Loop for continuous calculator operation (while loop)
-// Display menu (call displayMenu() method)
-// Get user choice
-// Use switch-case statement to call appropriate method based on choice
-// Handle invalid choices
-// Handle exit condition
-// Close scanner
+        while (flag) {
+            // Display menu (call displayMenu() method)
+            displayMenu();
+            System.out.print("Enter your choice (1-8 or 0 to exit): ");
+            try {
+                int choice = inputScanner.nextInt();
+                switch (choice) {
+                    case 0:
+                        flag = false;
+                        break;
+                    case 1:
+                        performAddition(inputScanner);
+                        break;
+                    case 2:
+                        performSubtraction(inputScanner);
+                        break;
+                    case 3:
+                        performMultiplication(inputScanner);
+                        break;
+                    case 4:
+                        performDivision(inputScanner);
+                        break;
+                    case 5:
+                        performSquareRoot(inputScanner);
+                        break;
+                    case 6:
+                        performPower(inputScanner);
+                        break;
+                    case 7:
+                        performSine(inputScanner);
+                        break;
+                    case 8:
+                        performCosine(inputScanner);
+                        break;
+                    case 9:
+                        performTangent(inputScanner);
+                        break;
+                    case 10:
+                        performNaturalLogarithm(inputScanner);
+                        break;
+                    case 11:
+                        performBase10Logarithm(inputScanner);
+                        break;
+                    case 12:
+                        performAbsoluteValue(inputScanner);
+                        break;
+                    case 13:
+                        performRound(inputScanner);
+                        break;
+                    case 14:
+                        performCeil(inputScanner);
+                        break;
+                    case 15:
+                        performFloor(inputScanner);
+                        break;
+                    case 16:
+                        performMix(inputScanner);
+                        break;
+                    case 17:
+                        performMax(inputScanner);
+                        break;
+                }
+            }
+            catch (InputMismatchException e) {
+                System.out.println("Invalid input.");
+                inputScanner.next();
+            }
+
+        }
+        inputScanner.close();
+
     }
     // --- Menu Display Method ---
     public static void displayMenu() {
 // Print all calculator options
+        System.out.println("\n--- Scientific Calculator Menu ---");
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+        System.out.println("5. Square Root");
+        System.out.println("6. Power");
+        System.out.println("7. Sine");
+        System.out.println("8. Cosine");
+        System.out.println("9. Tangent (in degrees)");
+        System.out.println("10.  Natural Logarithm (ln)");
+        System.out.println("11.  Logarithm Base 10 (log10)");
+        System.out.println("12.  Absolute Value");
+        System.out.println("13.  Round");
+        System.out.println("14.  Ceiling");
+        System.out.println("15.  Floor");
+        System.out.println("16.  Minimum of Two Numbers");
+        System.out.println("17.  Maximum of Two Numbers");
+        System.out.println("0. Exit");
     }
     // --- Basic Arithmetic Methods ---
     public static double add(double num1, double num2) {
