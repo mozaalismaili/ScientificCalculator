@@ -18,8 +18,8 @@ public class ScientificCalculator {
     }
     // --- Basic Arithmetic Methods ---
     public static double add(double num1, double num2) {
-// Logic for addition
-        return 0; // Placeholder
+        double addResult = num1 + num2;
+        return addResult; // Placeholder
     }
     // public static double subtract(...) { ... }
 // public static double multiply(...) { ... }
@@ -32,11 +32,21 @@ public class ScientificCalculator {
 // --- Helper Methods for User Interaction (calling from main's switch-case) ---
 // These methods will get input from the user specifically for each operation
     private static void performAddition(Scanner scanner) {
-// Prompt for first number
+        try {
+            // Prompt for first number
+            double num1 = scanner.nextDouble();
 // Prompt for second number
+            double num2 = scanner.nextDouble();
 // Call add() method
+            double result =add(num1, num2);
 // Print result
+            System.out.println(result);
+        }catch (InputMismatchException e) {
+            System.out.println("Try again");
+        }
+
 // Implement try-catch for InputMismatchException here!
+
     }
 // private static void performSubtraction(Scanner scanner) { ... }
 // ... and so on for all required functions
